@@ -6,6 +6,8 @@
 
 package javaapplication1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Bar
@@ -16,7 +18,19 @@ public class JavaApplication1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        JavaApplication1 myApp =new JavaApplication1();
+        String name = myApp.readName();
+        
+        System.out.println("bar" + name);
     }
-    
+    private String readName(){
+        Scanner sc = new Scanner(System.in);
+        String name;
+        
+        System.out.println("wassup");
+        name = sc.nextLine();
+        
+        return name;
+    }
 }
